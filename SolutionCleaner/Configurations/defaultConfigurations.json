@@ -1,0 +1,7 @@
+{
+  "language": "pt-br",
+  "cleanVs": true,
+  "cleanBin": true,
+  "cleanObj": true,
+  "cleanPackages": false
+}
