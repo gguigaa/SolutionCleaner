@@ -1,6 +1,6 @@
 # About
 
-> Designer for DotNet projects
+> Designed for DotNet projects
 
 This is a simple project to clean or erase folders .vs, bin, obj and packages from a solution folder. 
 It is not too uncommon to Visual Studio crash something and you need to clean the mentioned folders so you can continue your work. 
