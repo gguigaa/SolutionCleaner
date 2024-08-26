@@ -99,7 +99,26 @@ namespace SolutionCleaner.Services
             if (!_verificationMode)
             {
                 Console.WriteLine("Deleting " + directory);
-                Directory.Delete(directory, true);
+
+                try
+                {
+                    Directory.Delete(directory, true);
+                }
+                catch (IOException ex)
+                {
+                    Console.WriteLine("Error deleting " + directory + " (IOEXception) - " + ex.Message);
+                    throw;
+                }
+                catch (UnauthorizedAccessException ex)
+                {
+                    Console.WriteLine("Error deleting " + directory + " (UnauthorizedAccessException) - " + ex.Message);
+                    throw;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Unexpected error - " + ex.Message);
+                    throw;
+                }
             }
             else
                 Console.WriteLine("Would delete " + directory);

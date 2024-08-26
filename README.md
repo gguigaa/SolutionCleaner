@@ -42,3 +42,5 @@ Open the file "defaultConfigurations.json" and set the options as you like.
 
 If you set the environment variable, you can run the program from any folder. Just type "SolutionCleaner" in the command prompt and press enter.
 If you prefered not to, you can run the program from the "dist" folder. Or you can call it from any folder you want.
+
+Do not forget to close Visual Studio before running the program.
